@@ -10,7 +10,7 @@ func main() {
 
 	v1 := router.Group("/api/v1")
 	{
-		user := new(controllers.HelloWorldController())
+		user := controllers.HelloWorldController
 		v1.GET("/user", user)
 	}
 
